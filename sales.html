@@ -1,0 +1,39 @@
+<!DOCTYPE html>
+
+<!-- Name: Kevin Cronin-->
+<!-- Class: ITEC-236 @ SIUC-->
+<!-- Assignment: Lab 4--> 
+<!-- Created: 10/01/25-->
+<!-- Last tested/updated: 10/10/25-->
+
+<!-- comment header for sales webpage -->
+<html lang="en-US">
+    <head>
+        <meta charset="utf-8">
+        <title>Cronin's Cheap Cycles Sales</title> 
+        <meta name="description" content="A discount bicycle store offering options for children through adults"> <meta name="keywords" content="Cronin, cheap, bicycle, discount, sales">
+        <meta name="viewport" content="width=device-width, initial-scale=1">
+
+        <link rel="stylesheet" href="styles/main.css">
+        <link rel="stylesheet" href="styles/slicknav.css">
+        <script src="https://code.jquery.com/jquery-3.2.1.min.js"></script> 
+        <script src="js/jquery.slicknav.min.js"></script>
+        <script type="text/javascript">
+             $(document).ready(function(){
+                $('#nav_menu').slicknav({appendTo: "header", label: "Menu"}); 
+            });
+        </script>
+    </head>
+    <body>
+        <!-- navigation menu -->
+        <nav id="mobile_menu"></nav>
+        <nav id="nav_menu">
+            <ul>
+                <li><a href="index2.htm">Home</a></li>
+                <li><a href="rentals.htm">Rentals</a></li>
+                <li><a href="sales.htm" class="current">Sales</a></li>
+                <li><a href="services.htm">Services</a></li>
+                <li><a href="contact.htm" class="lastitem">Contact</a></li>
+            </ul>
+        </nav>
+    </body>
