@@ -1,0 +1,78 @@
+<!DOCTYPE html>
+
+<!-- Name: Kevin Cronin-->
+<!-- Class: ITEC-236 @ SIUC-->
+<!-- Created: 9/15/2025-->
+<!-- Last tested/updated: 9/28/25-->
+
+<!-- comment header for rental webpage -->
+<!-- slicknav wasn't working so I changed the prepend to mobile to append header, worked -->
+<html lang="en-US">
+    <head>
+        <meta charset="utf-8">
+        <title>Cronin's Cheap Cycles Rentals</title> 
+        <meta name="description" content="A discount bicycle store offering options for children through adults"> <meta name="keywords" content="Cronin, cheap, bicycle, discount, racing, vintage, province, grand prix, road bike">
+        <meta name="viewport" content="width=device-width, initial-scale=1">
+        
+        <link rel="stylesheet" href="styles/main.css">
+        <link rel="stylesheet" href="styles/slicknav.css">
+        <script src="https://code.jquery.com/jquery-3.2.1.min.js"></script> 
+        <script src="java/jquery.slicknav.min.js"></script>
+        <script type="text/javascript">
+        $(document).ready(function(){
+            $('#nav_menu').slicknav({
+                appendTo: "header", label: "Menu"});
+            });
+        </script>
+    </head>
+
+<!-- main body of the rental page -->
+    <body class="rentals">
+        <header>
+            <h1>Rentals</h1> 
+            <h2>Cronin's Cheap Cycles now offers bike rentals!</h2>
+        </header> 
+
+        <!-- navigation menu -->
+        <nav id="mobile_menu"></nav>
+        <nav id="nav_menu">
+            <ul>
+                <li><a href="index2.htm">Home</a></li>
+                <li><a href="rentals.htm" class="current">Rentals</a></li>
+                <li><a href="sales.htm">Sales</a></li>
+                <li><a href="services.htm">Services</a></li>
+                <li><a href="contact.htm" class="lastitem">Contact</a></li>
+            </ul>
+        </nav>
+
+            <!-- changed format due to trouble getting the aside to appear under the image in mobile mode -->
+            <!-- section to act as the left column, with bike listings and descriptions -->
+            <main>
+                <section>
+                    <h3>Some of our most popular rentals:</h3>
+                    <ol>
+                        <li><strong>Beast Crawler 9x</strong>: A powerful mountain bike with 20 gears, carbon fiber wheels and a solid steel frame. A fantastic choice for intermediate to advanced bikers looking for a reliable ride.</li>
+                        <li><strong>Mountain Snake 500T</strong>: For the younger adventurer, this mountain bike is perfect for someone aged 9-12 years old. The aluminum alloy wheels make sure the bike doesn't stop for anyone, and it comes with 14 gears to suit your preferences.</li>
+                        <li><strong>Devil's Chariot</strong>: Sometimes referred to by our employees as a <q>Harley that doesn't need gas</q>, this is the premier adult-sized street bike. Boasting 24 gears and a custom flame-wrap, this ride is sure to get you nods of approvement from all cyclists, whether or not they require gas.</li>
+                        <li><strong>801 Pebble Hopper</strong>: One of the best starter bikes we have, this pint-sized powerhouse is perfect for any 6-10 year old interested in finally riding alongside the big boys. With 7 gears, a comfortable polyester seat, and grippable handlebars, this bike will make any youngster an absolute convert to the wonders of road biking.</li>
+                    </ol>
+                </section>
+            </main>
+
+            <!-- aside section to act as the right column, with rental rules -->
+            <aside>
+                <h2>Rental terms:</h2>
+                <p>All bikes have a fixed charge of $25 per day rental, plus an additional $5 for every hour in use after the first two hours, during which time no additional charges are given. In the case of a week rental, the sole expense is $150 per bike.</p>
+                <p>Bringing your own helmet is recommended, but they can also be rented for $10 a helmet. In the case of damage to either the bike or helmet, additional charges will be applied depending on severity.</p>
+                <p>Rental bikes vary greatly in size, so don't hesitate to call in advance to make sure it suits you!</p>
+            </aside>
+            
+            <!-- changed from pre to address because it was taking up whitespace -->
+            <address>
+                Store Address:<br>
+                Cronin's Cheap Cycles<br>
+                420 Doxx Road<br>
+                Carbondale, IL 62901
+            <address> 
+    </body>
+</html>
