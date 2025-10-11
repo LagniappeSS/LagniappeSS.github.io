@@ -1,51 +1,81 @@
 <!DOCTYPE html>
-<!-- Comment Header for my website -->
+
+<!-- Name: Kevin Cronin-->
+<!-- Class: ITEC-236 @ SIUC-->
+<!-- Assignment: Lab 3--> 
+<!-- Created: 9/15/25-->
+<!-- Last tested/updated: 9/28/25-->
+
+<!-- comment header for home page -->
+<!-- slicknav wasn't working so I changed the prepend to mobile to append header, worked -->
 <html lang="en-US">
     <head>
         <meta charset="utf-8">
         <title>Cronin's Cheap Cycles</title> 
-        <meta name="description" content="A discount bicycle store offering options for children through adults"> <meta name="keywords" content="Cronin, cheap, bicycle, discount, bikes, BMX, Road Bikes, Mountain Bikes">
+        <meta name="description" content="A discount bicycle store offering options for children through adults"> <meta name="keywords" content="Cronin, cheap, bicycle, discount, racing, vintage, province, grand prix, road bike">
+        <meta name="viewport" content="width=device-width, initial-scale=1">
+        
+        <link rel="stylesheet" href="styles/slicknav.css">
+        <link rel="stylesheet" href="styles/main.css">
+        <script src="https://code.jquery.com/jquery-3.2.1.min.js"></script> 
+        <script src="js/jquery.slicknav.min.js"></script>
+        <script type="text/javascript">
+             $(document).ready(function(){
+                $('#nav_menu').slicknav({appendTo:"header", label: "Menu"});   
+            });
+        </script>
     </head>
 
-    <body>
+<!-- main body of the website-->
+    <body class="index">
         <header>
-            <img src="images/PXL_1910.jpg" alt="MPC Logo" width="500"> 
-        </header> 
             <h1>Cronin's Cheap Cycles</h1> 
             <h2>Enjoy quality bikes without breaking the bank!</h2>
-            <p>Feel free to browse our selection during store hours. If you can't make it in person, our employees are happy to answer any questions over the phone! Remember, we have bikes for all ages!</p>
-         
-    
-            <p>We're currently offering special discounts on bikes with scuffs, scratches, and wear!</p>
-            <p>Stay tuned for our online store, currently under production.</p>
-            <!-- block quote -->
-            <blockquote>Specializing in: Road Bikes, Mountain Bikes, 29'ers, BMX 
-            </blockquote>
-            <!--list of bikes -->
-            <ol>
-                <li>GT</li> <li>TREK</li> <li>Gary Fisher</li><li>HUFFY</li><li>Schwinn</li>
-            </ol> 
-              <!--inline element -->
-            <p>If you don't see the model you want <em>we can order something you like.</em></p> 
-            <p>Save a bundle at our <strong>big yearend sale</strong>.</p> 
-             <!--not sure what "school" you were referring to, but here is a link :) -->
-            <a href="https://www.siu.edu">WWW.SIU.EDU</a> 
-            
-            <p>How to contact Jeff Miller &amp; Staff:</p> <address>1-800-aaa-xxxx<br>
-            <a href="emailto:owner@mpc.com">owner@millersbicycles.com</a> </address> 
-           
-            <pre>
-<!-- my address -->
-Store Address:
+            <img src="images/PXL_1910.jpg" class="aside" id="image_1" alt="MPC Logo"><img src="images/PXL_1918.jpg" class="aside" id="image_2" alt="MPC Logo"> 
+        </header>
 
-Miller's Bicycles
-189 BMX Drive
-Makanda
-IL, 62958
-            </pre> 
-    
-           
+        <!-- navigation menu -->
+        <nav id="nav_menu">
+            <ul>
+                <li><a href="index2.htm" class="current">Home</a></li>
+                <li><a href="rentals.htm">Rentals</a></li>
+                <li><a href="sales.htm">Sales</a></li>
+                <li><a href="services.htm">Services</a></li>
+                <li><a href="contact.htm" class="lastitem">Contact</a></li>
+            </ul>
+        </nav> 
+        
+            <main>
+                <p>Feel free to browse our selection during store hours. If you can't make it in person, our employees are happy to answer any questions over the phone! Remember, we have bikes for <strong>all</strong> ages!</p>
+                <!-- underlined inline elements-->
+                <p>We're currently offering special discounts on bikes with <u>scuffs</u>, <u>scratches</u>, and <u>wear</u>!</p>
+                <p>Stay tuned for our online store, currently under production.</p>
+                <!--list of bikes -->
+                <p>Here are some of our recently acquired offerings:</p>
+                <ol>
+                    <li>Province 1.0 kid's bike (black)</li><li>Grand Prix vintage adult's racing bike (blue)</li><li>Rahleigh vintage adult's road bike (red)</li>
+                </ol>
+                <!-- block quote -->
+                <blockquote>Our primary focuses: Road Bikes, Racing Bikes, Children's Bikes, Adult Bikes 
+                </blockquote>
+                <!--inline element -->
+                <p>If our selection isn't satisfactory, check back in a few days time. We're refreshing our stock <em>nearly every week.</em></p> 
+                <p>Check out our vendor stall at the <strong>2025 Fall Vendor Fest</strong> on main street, you can't miss us!</p> 
+                <!--school link -->
+                <a href="https://www.siu.edu">WWW.SIU.EDU</a> 
+                <p>How to contact Kevin Cronin &amp; Staff:</p> <address>515-808-2362<br>
+                <a href="emailto:owner@mpc.com">kevin@cronincheapcycles.com</a></address><br>
+            </main>
+
+            <!-- changed from pre to address because it was taking up whitespace -->
+            <address>
+                Store Address:<br>
+                Cronin's Cheap Cycles<br>
+                420 Doxx Road<br>
+                Carbondale, IL 62901
+            <address> 
 
     </body>
 
 </html>
+
